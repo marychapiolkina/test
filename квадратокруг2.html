@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>HTML-баннер</title>
+	<style>
+	@keyframes turning{
+	    0% {
+		    border-radius: 0 0 0 0;
+			transform: rotate(0deg);  }
+		25%{
+		    border-radius: 50% 0 0 0;
+			transform: rotate(45deg);  }
+		50%{
+		    border-radius: 50% 50% 0 0;
+			transform: rotate(90deg);  }
+		75%{
+		    border-radius: 50% 50% 50% 0;
+			transform: rotate(135deg);  }	
+		100%{
+		    border-radius: 50% 50% 50% 50%;
+			transform: rotate(180deg);  }	}
+	div {
+	    width: 500px;
+		height:500px;
+		background-color: blue;
+		margin: 50px;
+		animation: turning 2s ease-out 1s infinite alternate;
+		float: left;}
+	div:hover {
+	    animation-play-state: paused;}
+	div.img1{
+		background-image:url(1.jpg);
+	}
+	div.img2{
+		background-image:url(2.jpg);
+	}
+	div.img3{
+		background-image:url(5.jpg);
+	}
+    </style>
+	</head>
+	<body>
+	    <div class="img1">
+		</div>
+		<div class="img2">
+		</div>
+		<div class="img3">
+		</div>
+	</body>
+</html>
